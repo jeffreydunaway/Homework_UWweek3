@@ -26,10 +26,10 @@ const getTotalPoints = (strPoints) => {
 // code block here
 let totalPoints = 0;
 
-let sepPoints = strPoints.split(',');
-
-sepPoints.forEach(function(number){
-  totalPoints += number;
+let sepPoints = strPoints.split('');
+console.log(sepPoints)
+sepPoints.forEach(function(item){
+  totalPoints += RESULT_VALUES[item];
 });
 
 return totalPoints;
